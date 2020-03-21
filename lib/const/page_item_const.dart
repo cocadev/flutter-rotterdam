@@ -45,11 +45,6 @@ const PAGE_ITEMS = [
     "click": PageName.SCAFFOLD,
   },
   {
-    "title": PageName.FLUTTER_LOGO,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.FLUTTER_LOGO,
-  },
-  {
     "title": PageName.BOTTOM_NAV_BAR,
     "img": PageImage.FLUTTER_OPEN,
     "click": PageName.BOTTOM_NAV_BAR,
@@ -73,11 +68,6 @@ const PAGE_ITEMS = [
     "title": PageName.STACK,
     "img": PageImage.FLUTTER_OPEN,
     "click": PageName.STACK,
-  },
-  {
-    "title": PageName.ALERT_DIALOG,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.ALERT_DIALOG,
   },
   {
     "title": PageName.EXPANSION_PANEL,
@@ -105,24 +95,9 @@ const PAGE_ITEMS = [
     "click": PageName.CARD,
   },
   {
-    "title": PageName.TOOLTIP,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.TOOLTIP,
-  },
-  {
     "title": PageName.DATA_TABLE,
     "img": PageImage.FLUTTER_OPEN,
     "click": PageName.DATA_TABLE,
-  },
-  {
-    "title": PageName.PROGRESS_INDICATOR,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.PROGRESS_INDICATOR,
-  },
-  {
-    "title": PageName.MIX_SINGLE_LAYOUT,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.MIX_SINGLE_LAYOUT,
   },
   {
     "title": PageName.INDEX_STACK,
@@ -133,11 +108,6 @@ const PAGE_ITEMS = [
     "title": PageName.EXPANDED,
     "img": PageImage.FLUTTER_OPEN,
     "click": PageName.EXPANDED,
-  },
-  {
-    "title": PageName.FLOW,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.FLOW,
   },
   {
     "title": PageName.LAYOUT,
@@ -168,11 +138,6 @@ const PAGE_ITEMS = [
     "title": PageName.ANIM_CROSS_FADE,
     "img": PageImage.FLUTTER_OPEN,
     "click": PageName.ANIM_CROSS_FADE,
-  },
-  {
-    "title": PageName.ANIM_HERO,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.ANIM_HERO,
   },
   {
     "title": PageName.ANIM_FADE_TRANS,
@@ -223,26 +188,6 @@ const PAGE_ITEMS = [
     "title": PageName.ANIM_OPACITY,
     "img": PageImage.FLUTTER_OPEN,
     "click": PageName.ANIM_OPACITY,
-  },
-  {
-    "title": PageName.INTER_DRAG,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.INTER_DRAG,
-  },
-  {
-    "title": PageName.INTER_GESTURE,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.INTER_GESTURE,
-  },
-  {
-    "title": PageName.INTER_DISMISSIBLE,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.INTER_DISMISSIBLE,
-  },
-  {
-    "title": PageName.INTER_POINTER,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.INTER_POINTER,
   },
   {
     "title": PageName.INTER_NAV,

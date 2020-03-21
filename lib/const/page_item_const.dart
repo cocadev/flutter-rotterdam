@@ -50,11 +50,6 @@ const PAGE_ITEMS = [
     "click": PageName.FLUTTER_LOGO,
   },
   {
-    "title": PageName.PLACE_HOLDER,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.PLACE_HOLDER,
-  },
-  {
     "title": PageName.BOTTOM_NAV_BAR,
     "img": PageImage.FLUTTER_OPEN,
     "click": PageName.BOTTOM_NAV_BAR,
@@ -80,16 +75,6 @@ const PAGE_ITEMS = [
     "click": PageName.STACK,
   },
   {
-    "title": PageName.STEPPER,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.STEPPER,
-  },
-  {
-    "title": PageName.SIMPLE_DIALOG,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.SIMPLE_DIALOG,
-  },
-  {
     "title": PageName.ALERT_DIALOG,
     "img": PageImage.FLUTTER_OPEN,
     "click": PageName.ALERT_DIALOG,
@@ -108,11 +93,6 @@ const PAGE_ITEMS = [
     "title": PageName.TEXT_FIELD,
     "img": PageImage.FLUTTER_OPEN,
     "click": PageName.TEXT_FIELD,
-  },
-  {
-    "title": PageName.CHIP,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.CHIP,
   },
   {
     "title": PageName.CHECK_BOX,

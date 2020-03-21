@@ -51,12 +51,6 @@ class _HomeState extends State<HomePage> {
       child: Card(
           child: Stack(
         children: <Widget>[
-//          Center(
-//            child: Image.asset(
-//              PAGE_ITEMS[index]["img"],
-//              fit: BoxFit.cover,
-//            ),
-//          ),
           Container(
             constraints: BoxConstraints.expand(),
             decoration: BoxDecoration(gradient: _itemGradient(index)),

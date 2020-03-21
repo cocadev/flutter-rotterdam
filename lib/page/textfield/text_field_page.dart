@@ -10,67 +10,87 @@ class _TextFieldState extends State<TextFieldPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(PageName.TEXT_FIELD),
-      ),
-      body: TextField(
-        controller: TextEditingController(text: "Hello"),
-        decoration: InputDecoration(
-            hasFloatingPlaceholder: true,
-            isDense: false,
-            contentPadding: EdgeInsets.symmetric(vertical: 10),
-            filled: false,
-            fillColor: RED,
-            errorBorder:
-                UnderlineInputBorder(borderRadius: BorderRadius.circular(100)),
-            semanticCounterText: "semati",
-            alignLabelWithHint: true),
-        keyboardType: TextInputType.url,
-        onTap: () {
-          print("Tab");
-        },
-        onChanged: (value) {
-          print("value: $value");
-        },
-        onSubmitted: (v) {
-          print("v: $v");
-        },
-      ),
-    );
+        body: Container(
+            margin: EdgeInsets.all(40.0),
+            padding: EdgeInsets.only(top: 100.0),
+            child: Column(
+                mainAxisSize: MainAxisSize.max,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          "Welcome, Scout!",
+                          style: TextStyle(
+                              fontSize: 19, fontWeight: FontWeight.w500),
+                        ),
+                        Text(
+                          "What's your name?",
+                          style: TextStyle(
+                              fontSize: 38, fontWeight: FontWeight.w700),
+                        ),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.only(top: 30.0),
+                                child: Text(
+                                  "First Name",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ),
+                              TextField(
+                                controller: TextEditingController(text: ""),
+                                style: TextStyle(fontSize: 30.0),
+                                onChanged: (value) {
+                                  print("value: $value");
+                                },
+                              ),
+                            ]),
+                        Padding(
+                            padding: EdgeInsets.only(top: 40.0),
+                            child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Last Name",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  TextField(
+                                    controller: TextEditingController(text: ""),
+                                    style: TextStyle(fontSize: 30.0),
+                                    onChanged: (value) {
+                                      print("value: $value");
+                                    },
+                                  ),
+                                ])),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: RaisedButton(
+                      onPressed: () {
+                        print("click");
+                      },
+                      color: Colors.blue,
+                      child: Text(
+                        "Continue",
+                        style: TextStyle(fontSize: 16, color: Colors.white),
+                      ),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 140),
+                      shape: StadiumBorder(
+                        side: BorderSide(color: RED_LIGHT, width: 1),
+                      ),
+                    ),
+                  )
+                ])));
   }
 }
-//this.icon,
-//this.labelText,
-//this.labelStyle,
-//this.helperText,
-//this.helperStyle,
-//this.hintText,
-//this.hintStyle,
-//this.hintMaxLines,
-//this.errorText,
-//this.errorStyle,
-//this.errorMaxLines,
-//this.hasFloatingPlaceholder = true,
-//this.isDense,
-//this.contentPadding,
-//this.prefixIcon,
-//this.prefix,
-//this.prefixText,
-//this.prefixStyle,
-//this.suffixIcon,
-//this.suffix,
-//this.suffixText,
-//this.suffixStyle,
-//this.counterText,
-//this.counterStyle,
-//this.filled,
-//this.fillColor,
-//this.errorBorder,
-//this.focusedBorder,
-//this.focusedErrorBorder,
-//this.disabledBorder,
-//this.enabledBorder,
-//this.border,
-//this.enabled = true,
-//this.semanticCounterText,
-//this.alignLabelWithHint,

@@ -14,7 +14,7 @@ class _ImageState extends State<ImagePage> {
   Widget _limitSize() => Container(
         child: Image.asset(
           _LogoImg,
-          width: 560,
+          width: 700,
         ),
       );
   @override
@@ -33,15 +33,15 @@ class _ImageState extends State<ImagePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SizedBox(height: 120.0),
+            SizedBox(height: 1),
             _limitSize(),
             Column(
               children: <Widget>[
-RaisedButton(
+              RaisedButton(
               onPressed: () {
                 print("click");
               },
-              color: Colors.blue,
+              color: Colors.red[200],
               child: Text(
                 "Continue with Google Login",
                 style: TextStyle(fontSize: 30, color: Colors.white),
@@ -51,6 +51,7 @@ RaisedButton(
                 side: BorderSide(color: RED_LIGHT, width: 1),
               ),
             ),
+            SizedBox(height: 10.0),
             RaisedButton(
               onPressed: () {
                 print("click");

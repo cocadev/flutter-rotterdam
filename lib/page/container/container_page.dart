@@ -22,19 +22,16 @@ class _ContainerState extends State<ContainerPage> {
         children: <Widget>[
           Container(
             color: RED,
-            child: Text("Hello world"),
+            child: Text("SizedBox(height: 100) - marginBottom: 100"),
           ),
-          Container(
-            color: GREEN,
-            child: Text("Color color"),
-          ),
+          SizedBox(height: 100),
           Container(
             color: YELLOW,
             padding:
                 EdgeInsets.only(left: 10.0, right: 50.0, top: 10, bottom: 30),
             child: Container(
               color: BLUE_DEEP,
-              child: Text("this.padding"),
+              child: Text("Container->padding,    padding: EdgeInsets.only(left: 10.0, right: 50.0, top: 10, bottom: 30),"),
             ),
           ),
           Container(
@@ -49,40 +46,40 @@ class _ContainerState extends State<ContainerPage> {
               margin:
                   EdgeInsets.only(left: 10.0, right: 50.0, top: 10, bottom: 30),
               color: GREEN,
-              child: Text("this.margin"),
+              child: Text("Container->margin,   margin: EdgeInsets.only(left: 10.0, right: 50.0, top: 10, bottom: 30),"),
             ),
           ),
           Container(
             color: BLUE_LIGHT,
             alignment: Alignment.bottomRight,
             height: 200,
-            child: Text("this.alignment"),
+            child: Text("justifyContent: 'flex-end' : alignment: Alignment.bottomRight, "),
           ),
           Container(
             color: YELLOW,
             height: 100.0,
             alignment: AlignmentDirectional.bottomEnd,
             child: Text(
-              "HellH",
-              textDirection: TextDirection.rtl,
+              "justifyContent: 'flex-end' : alignment: AlignmentDirectional.bottomEnd, ",
             ),
           ),
           Container(
             color: BLUE_LIGHT,
             constraints: BoxConstraints.expand(height: 50.0),
-            child: Text("BoxConstraints constraints"),
+            child: Text("BoxConstraints constraints height: 50.0"),
           ),
           Container(
             constraints: BoxConstraints.expand(height: 100.0),
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.all(30),
+            margin: EdgeInsets.all(20),
             decoration: ShapeDecoration(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(
-                    Radius.circular(10.0),
+                    Radius.circular(40.0),
                   ),
                 ),
                 color: RED),
-            child: Text("decoration: ShapeDecoration"),
+            child: Text("decoration: ShapeDecoration borderRadius 30, Container-margin & padding"),
           ),
           Container(
             constraints: BoxConstraints.expand(height: 200.0),
@@ -91,7 +88,7 @@ class _ContainerState extends State<ContainerPage> {
             decoration: BoxDecoration(
                 gradient: LinearGradient(colors: [BLUE_LIGHT, YELLOW]),
                 shape: BoxShape.circle),
-            child: Text("decoration: BoxDecoration"),
+            child: Text("decoration: BoxDecoration "),
           ),
           Container(
             padding: EdgeInsets.only(top: 10, left: 10),
@@ -101,10 +98,10 @@ class _ContainerState extends State<ContainerPage> {
           ),
           Container(
             padding: EdgeInsets.only(top: 10, left: 10),
-            constraints: BoxConstraints.expand(width: 100, height: 100),
+            constraints: BoxConstraints.expand(width: 300, height: 100),
             color: RED_LIGHT,
             transform: Matrix4.rotationY(pi / 4)..rotateX(pi / 4),
-            child: Text("this.transform"),
+            child: Text("transform: Matrix4.rotationY(pi / 4)"),
           )
         ],
       )),

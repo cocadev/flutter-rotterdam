@@ -1,3 +1,3 @@
 # Flutter Scout
 
-<img src='assets/screenshot.jpg'>
+<img src='assets/screenshot.jpg' width=300>

@@ -115,11 +115,6 @@ const PAGE_ITEMS = [
     "click": PageName.CHIP,
   },
   {
-    "title": PageName.SLIDER,
-    "img": PageImage.FLUTTER_OPEN,
-    "click": PageName.SLIDER,
-  },
-  {
     "title": PageName.CHECK_BOX,
     "img": PageImage.FLUTTER_OPEN,
     "click": PageName.CHECK_BOX,

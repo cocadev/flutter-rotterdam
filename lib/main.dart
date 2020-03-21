@@ -1,7 +1,6 @@
 ///Create by Flutter open
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/page/_page.dart';
-import 'package:flutter_widgets/util/_util.dart';
 import 'package:flutter_widgets/const/_const.dart';
 
 void main() => runApp(FlutterOpenApp());
@@ -42,7 +41,6 @@ class FlutterOpenApp extends StatelessWidget {
         PageName.SNACK_BAR: (context) => SnackPage(),
         PageName.TEXT_FIELD: (context) => TextFieldPage(),
         PageName.CHIP: (context) => ChipPage(),
-        PageName.SLIDER: (context) => SliderPage(),
         PageName.CHECK_BOX: (context) => CheckBoxPage(),
         PageName.CARD: (context) => CardPage(),
         PageName.TOOLTIP: (context) => TooltipPage(),

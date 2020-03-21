@@ -165,35 +165,13 @@ class _PopupMenuButtonState extends State<PopupMenuButtonPage> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            //our code.
-            _simplePopup(),
-            SizedBox(height: 10),
-            Container(
-              color: RED,
-              constraints: BoxConstraints.expand(height: 60),
-              child: _threeItemPopup(),
-            ),
-            SizedBox(height: 10),
-            Container(
-              color: BLUE,
-              constraints: BoxConstraints.expand(height: 60),
-              child: _selectPopup(),
-            ),
+           
             SizedBox(height: 10),
             Container(
               color: PURPLE,
               child: _paddingPopup(),
             ),
-            SizedBox(height: 10),
-            Container(
-              child: _childPopup(),
-            ),
-            SizedBox(height: 10),
-            Container(
-              color: BLUE_LIGHT,
-              child: _offsetPopup(),
-            ),
-            SizedBox(height: 600)
+          
           ],
         ),
       ),

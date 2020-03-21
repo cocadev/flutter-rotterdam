@@ -14,7 +14,7 @@ class _ImageState extends State<ImagePage> {
   Widget _limitSize() => Container(
         child: Image.asset(
           _LogoImg,
-          width: 260,
+          width: 560,
         ),
       );
   @override
@@ -33,7 +33,24 @@ class _ImageState extends State<ImagePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            SizedBox(height: 120.0),
             _limitSize(),
+            Column(
+              children: <Widget>[
+RaisedButton(
+              onPressed: () {
+                print("click");
+              },
+              color: Colors.blue,
+              child: Text(
+                "Continue with Google Login",
+                style: TextStyle(fontSize: 30, color: Colors.white),
+              ),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
+              shape: StadiumBorder(
+                side: BorderSide(color: RED_LIGHT, width: 1),
+              ),
+            ),
             RaisedButton(
               onPressed: () {
                 print("click");
@@ -41,16 +58,19 @@ class _ImageState extends State<ImagePage> {
               color: Colors.blue,
               child: Text(
                 "Continue with Facebook Login",
-                style: TextStyle(fontSize: 16, color: Colors.white),
+                style: TextStyle(fontSize: 30, color: Colors.white),
               ),
               padding: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
               shape: StadiumBorder(
                 side: BorderSide(color: RED_LIGHT, width: 1),
               ),
             ),
+            
+              ],
+            ),
             Text(
               "We don't post anything to Facebook or Instagram. \nBy signing in, you agree to our Privacy Policy",
-              style: TextStyle(fontSize: 14, color: Colors.white,),
+              style: TextStyle(fontSize: 30, color: Colors.white,),
               textAlign: TextAlign.center,
             )
           ],

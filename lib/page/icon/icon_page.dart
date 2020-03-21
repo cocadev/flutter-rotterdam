@@ -19,33 +19,25 @@ class _IconState extends State<IconPage> {
         child: Column(
           children: <Widget>[
             Icon(
-              Icons.ac_unit,
-              size: 100,
-              color: RED,
-            ),
-            Icon(
-              Icons.chrome_reader_mode,
+              Icons.chevron_left,
               size: 200,
               color: GREEN,
-              textDirection: TextDirection.ltr,
             ),
             Icon(
-              Icons.chrome_reader_mode,
+              Icons.chevron_left,
               size: 200,
               color: BLUE_DEEP,
               textDirection: TextDirection.rtl,
             ),
             Icon(
-              Icons.build,
+              Icons.expand_less,
               size: 200,
               color: PURPLE,
-              textDirection: TextDirection.ltr,
             ),
             Icon(
-              Icons.build,
+              Icons.expand_more,
               size: 200,
               color: BLUE_DEEP,
-              textDirection: TextDirection.rtl,
             )
           ],
         ),
